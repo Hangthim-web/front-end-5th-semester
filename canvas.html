@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #myCanvas{
+            border: 1px solid #b71d1c;
+            height: 100%;
+            width: 100%;
+        }
+        legend{
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <fieldset>
+        <legend>Canvas</legend>
+        <canvas id="myCanvas">
+        </canvas>
+    </fieldset>
+    <script>
+
+        let canvas=document.getElementById('myCanvas'); //target the desired canvas by id;
+        const canvasOffsetX = canvas.offsetLeft;
+        const canvasOffsetY = canvas.offsetTop;
+        let x;
+        let y;
+        let drawing=false;
+        canvas.addEventListener('mousedown',(e)=>{
+             drawing=true;
+        })
+        canvas.addEventListener('mouseup',(e)=>{
+             drawing=false;
+        });
+        canvas.addEventListener('mousemove',(e)=>{
+            if(drawing)
+            {
+                let context=canvas.getContext("2d"); //set the context to 2d;
+                context.strokeStyle="#b71d1c" // change context properties
+                context.moveTo(x,y); //set the starting x,y coord
+                context.lineTo(e.offsetX-canvasOffsetX,e.offsetY-canvasOffsetY); //set the ending x,y coord
+                context.stroke();
+            }
+
+        })
+
+
+    </script>
+    
+</body>
+</html>

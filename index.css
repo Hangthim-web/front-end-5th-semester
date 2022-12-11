@@ -1,0 +1,163 @@
+*{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+
+}
+:root{
+    --primary-color:#e94b3cff;
+    --secondary-color:#2d2926ff;
+    --primary-font:'Roboto', sans-serif;
+    --secondary-font:'monospace';
+
+}
+/* navbar portion */
+#logo{
+    font-family: 'Dancing Script', cursive;
+    font-size:3em;
+    cursor: pointer;
+}
+body{
+    font-family: var(--primary-font);
+    padding: 10px 60px;
+}
+.navbar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.unordered-lists{
+    list-style-type: none;
+}
+.unordered-lists li{
+    display: inline-block;
+    font-size: 0.98em;
+}
+.unordered-lists li a{
+    text-decoration: none;
+    color: var(--secondary-color);
+    padding: 1em;
+}
+.unordered-lists li a:hover{
+color: var(--primary-color);
+}
+.unordered-lists li a:focus{
+    color: var(--primary-color);
+}
+/* fieldset portion */
+.hero-section{
+    margin-left: 20px;
+    padding: 20px;
+    display: flex;
+    justify-content:flex-start;
+    align-items: center;
+}
+#my-pic{
+    border-radius: 50%;
+    height: 200px;
+    width: 200px;
+}
+.hero-article{
+    font-family:monospace;
+    margin-left:100px;
+    width: 800px;
+    user-select: none;
+    /* height: 100px; */
+}
+#name{
+    font-weight: 500;
+    margin-top: 4px;
+    font-family: var(--primary-font);
+    text-align: center;
+}
+#article-button{
+    padding: 4px 8px;
+    background-color:var(--secondary-color);
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    margin-top: 12px;
+    cursor: pointer;
+    font-family: monospace;
+    letter-spacing: 0.1px;
+}
+#article-button:hover{
+background-color: var(--primary-color);
+transition: 0.2s ease-in-out;
+}
+#article-button:active{
+    transform: translate(2px,2px);
+    transition: none;
+}
+label{
+    font-family: var(--primary-font);
+    font-size:0.96em;
+    /* padding-bottom: 20px; */
+}
+.input{
+    outline: none;
+    font-family: monospace;
+    padding: 4px 4px ;
+    width: 200px;
+    height: 30px;
+    border-bottom: 2px solid var(--secondary-color);
+   border-left: none;
+   border-right: none;
+   border-top: none;
+    margin: 0 0 8px 0;
+    background-color: rgba(221, 218, 215, 0.072);
+    border-radius: 4px;
+} 
+
+#login-section{
+    /* margin-left: 20px; */
+    padding: 22px;
+}
+.form-section{
+    gap: 10px;
+    margin-left: 20px;
+}
+/* radio button portion */
+.radio{
+    margin: 10px 0px;   
+}
+#radio-label--male{
+    margin-right: 20px;
+}
+#label-male,#label-female{
+    font-family: monospace;
+    font-size: 1.2em;
+}
+#comments{
+    margin-top:8px;
+    padding: 10px;
+    overflow: scroll;
+    overflow-x: hidden;
+}
+#submit-button{
+    padding: 4px 8px;
+    background-color:var(--secondary-color);
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    margin-top: 12px;
+    cursor: pointer;
+    font-family: monospace;
+    letter-spacing: 0.1px;
+}
+#submit-button:hover{
+    background-color: var(--primary-color);
+transition: 0.2s ease-in-out;
+}
+#submit-button:active{
+    transform: translate(2px,2px);
+    transition: none;
+}
+#browse-file{
+    margin: 10px 0;
+
+}
+#fieldset-mouseEvents{
+    padding: 20px;
+    /* margin-left: 10px; */
+}

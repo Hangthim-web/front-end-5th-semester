@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>canvas in html(brief)</title>
+   
+    <style>
+        #myCanvas{
+            border: 1px solid #232323;
+        }
+        body{
+            font-family: monospace;
+        }
+        legend,h1{
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <main>
+    <fieldset>
+        <legend>Canvas</legend>
+        <h1>Canvas in HTML</h1>
+        <canvas id="myCanvas"></canvas>
+
+    </fieldset>
+    <fieldset>
+        <legend>canvas circle</legend>
+        <h1>Cirlce in canvas using html and JS</h1>
+        <canvas id="myCanvas-circle"></canvas>
+    </fieldset>
+    </main>
+ <script>
+     console.log('here')
+     let canvas=document.getElementById('myCanvas'); //target the desired canvas by id
+     let context=canvas.getContext("2d"); //set the context to 2d
+     context.strokeStyle="#b71d1c" //change context properties
+     //first path
+     context.beginPath();
+        context.moveTo(40,80); //set the starting x,y coordinate
+        context.lineTo(100,10); //set the ending x,y coordinate
+        context.stroke();
+        // second path
+        // let canvas=document.getElementById('myCanvas'); 
+        // let context=canvas.getContext("2d");
+        context.beginPath();
+        context.strokeStyle="#a3a3a3";
+        context.moveTo(100,10);
+        context.lineTo(120,120);
+        context.stroke();
+
+    </script>
+
+   
+    <script>
+        var c=document.getElementById("myCanvas-circle");
+        var ctx = c.getContext("2d");
+        context.strokeStyle="#b71d1c";
+        ctx.beginPath();
+        ctx.arc(95,50,40,0,2*Math.PI);
+        ctx.stroke();
+        //arc(x,y,radius,startAngle,endAngle,counterclockwise)
+    </script>
+    <article>
+        <aside style="text-align:right; padding:20px; font-size:2em;">This is aside tag</aside>
+    </article>
+</body>
+</html>

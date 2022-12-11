@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>portfolio</title>
+    <link rel="stylesheet" href="index.css">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;500;600;700&family=Roboto:wght@300;400;500;700&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+    <header>
+        <div class="navbar">
+            <h2 id="logo">logo</h2>
+            <nav>
+                <ul class="unordered-lists">
+                    <li><a href="###">Home</a></li>
+                    <li><a href="###">About Us</a></li>
+                    <li><a href="###">Contact Us</a></li>
+                    <li><a href="###">Testinomials</a></li>
+                    <li><a href="###">Blog</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <main>
+    <fieldset style="margin:10px 0px">
+        <legend>INTRODUCTION</legend>
+        <div class="hero-section">
+            <div class="hero-photo">
+                <img src="mypic.jpg" alt="###" id="my-pic">
+                <h2 id="name">Hangthim Limbu</h2>
+            </div>
+            <div class="hero-article">
+                <p>
+                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Fugit debitis voluptates expedita quo nihil.
+                Natus possimus aut pariatur vitae, quisquam blanditiis quibusdam. Tenetur veniam, dicta praesentium
+                officiis hic tempore neque dolor, soluta vitae recusandae, iste sunt. Quaerat necessitatibus omnis magni
+                cumque veritatis quisquam voluptas voluptate pariatur quis reprehenderit minus excepturi, ad delectus
+                debitis facere asperiores consectetur aliquid odio fugit repellat sed molestias maxime? Quae illum at
+                obcaecati fugiat quas tempore magnam autem et! Eligendi aut ea atque enim beatae eius, deleniti adipisci
+                sint architecto molestias molestiae voluptates expedita cumque quibusdam quidem ad labore? Voluptates
+                cupiditate nobis dolorem obcaecati, iste illum?</p>
+                
+                <button type="submit" id="article-button">Read more</button>
+            </div>
+        </div>
+    </fieldset>
+    
+    <fieldset id="login-section"><legend>LOGIN PAGE</legend>
+        <div class="form-section">
+        <label for="firstname" id="label-fname">First Name</label><br>
+        <input required type="text" id="fname" name="fname" placeholder="First Name" class="input" ><br>
+        <label for="lastname">Last Name</label><br>
+        <input type="text" id="lname" name="lname" placeholder="Last Name" class="input" required><br>
+        <label for="email">Email:</label><br>
+        <input type="text" id="email" name="email" placeholder="eg:abc@gmial.com" class="input" required><br>
+        <label for="password">password</label><br>
+        <input type="password" id="password" name="pass" class="input" required><br>
+        <label for="re-password">Re-type Password:</label><br>
+        <input type="text" id="re-pass" name="re-pass" class="input" required><br>
+        <label for="name" id="name"></label>
+        <label for="ID-no">ID no.</label><br>
+        <input type="number" id="ID-no" class="input" placeholder="ID no." required><br>
+        <label for="Country">Country</label><br>
+        <input type="text" id="country" class="input" placeholder="eg:Nepal" required><br>
+        <label for="occupation"></label>
+        <select name="occupation" id="occupation" class="input" required>
+            <option value="student">Student</option>
+            <option value="teacher">Teacher</option>
+            <option value="Programmer">Programmer</option>
+            <option value="Web developer">Web Developer</option>
+            <option value="Manager">Manager</option>
+        </select>
+        <div class="radio">
+           Gender: <br>
+            <label for="male" id="label-male">Male</label>
+            <input type="radio" id="radio-label--male" value="male" name="radio">
+            <label for="female" id="label-female">Female</label>
+            <input type="radio" id="radio-label--female" value="female" name="radio">
+        </div>
+        <label for="comments"></label>
+        <textarea name="comments" id="comments" cols="30" rows="10" placeholder="Enter your comments here"></textarea><br>
+        <input type="file" id="browse-file"><br>
+        <button type="submit" value="submit" id="submit-button">Submit</button>
+        <!-- <input type="text" placeholder="click here"> -->
+     </div>
+     </fieldset>
+     <fieldset id="fieldset-mouseEvents"><legend>MOUSE EVENTS AND IFRAME</legend>
+        <button onmouseleave="handleMouseLeave()" onclick="abc()" ID="submit-button" style="margin-left: 10px; margin-bottom: 10px;">click me</button><br>
+        <script>
+            function abc()
+            {
+                alert('Hi World!')
+            }
+            function handleMouseLeave()
+            {
+                alert('mouse left')
+            }
+        </script>
+        <iframe width="100%" height="400px" src="https://youtu.be/NGQQGeI1MmE" frameborder="0" title="youtube video player" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        
+     </fieldset>
+    <fieldset>
+        <legend>Javascript</legend>
+        <button type="submit">submit</button>
+    </fieldset>
+     </main>
+<script>
+    
+</script>
+</body>
+
+</html>
